@@ -7,6 +7,8 @@ RUN apt-get update && \
     postgresql-contrib \
     postgresql-${POSTGRES_VERSION}-pgvector \
     postgresql-${POSTGRES_VERSION}-postgis-3 \
-    && rm -rf /var/lib/apt/lists/*
+    postgresql-${POSTGRES_VERSION}-postgis-3-scripts \
+    postgis && \
+    rm -rf /var/lib/apt/lists/*
 
 EXPOSE 5432
